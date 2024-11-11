@@ -34,7 +34,7 @@ import seaborn as sns
 import mne_features
 
 # Locate data folder and all files
-data_folder = '/content/drive/My Drive/Colab Notebooks/Depression Data' # change last folder to data set
+data_folder = '/content/drive/My Drive/Colab Notebooks/Depression Data' # Replace with new path from download
 edf_files = [os.path.join(data_folder, f) for f in os.listdir(data_folder) if f.endswith('.edf')]
 
 # print (edf_files)
@@ -134,7 +134,7 @@ print(labels_processed)
 import os
 
 # Specify the directory
-save_dir = '/content/drive/My Drive/Colab Notebooks'
+save_dir = '/content/drive/My Drive/Colab Notebooks' # Replace with new path wanted
 
 # Create the directory if it doesn't exist
 os.makedirs(save_dir, exist_ok=True)
@@ -171,8 +171,8 @@ from imblearn.over_sampling import SMOTE
 print("Debug: Starting script")
 
 # Load and preprocess data
-features_file_path = '/content/drive/My Drive/Colab Notebooks/features_processed.csv'
-labels_file_path = '/content/drive/My Drive/Colab Notebooks/labels_processed.csv'
+features_file_path = '/content/drive/My Drive/Colab Notebooks/features_processed.csv' # Replace with new path from download
+labels_file_path = '/content/drive/My Drive/Colab Notebooks/labels_processed.csv' # Replace with new path from download
 
 features_processed_df = pd.read_csv(features_file_path)
 labels_processed = pd.read_csv(labels_file_path)
@@ -581,12 +581,12 @@ def predict_depression(model, discretizer, row, selected_features):
     return result.values[1]
 
 # Load the saved model
-model_path = '/content/drive/My Drive/Colab Notebooks/BCIModel_Final_Mk1.pkl'
+model_path = '/content/drive/My Drive/Colab Notebooks/BCIModel_Final_Mk.pkl'
 with open(model_path, 'rb') as f:
     final_model, final_discretizer, final_selected_features = pickle.load(f)
 
 # Directory containing EEG files
-eeg_dir = '/content/drive/My Drive/Colab Notebooks/Depression Tester/'
+eeg_dir = '/content/drive/My Drive/Colab Notebooks/Depression Tester/' # Replace with new path from download
 
 def show_files():
     print("\nEEG files in the directory:")
