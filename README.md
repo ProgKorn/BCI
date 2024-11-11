@@ -3,8 +3,11 @@ Bayesian Causal Inference usage to diagnose and understand Major Depressive Diso
 <br/> The current associated study can be found https://drive.google.com/file/d/1AorPgls7WNlbUl-t3Z5v_FhRAFpOzsM1/view?usp=sharing
 
 # How to use
-Please refer to the comments in the code and rename the paths for the datasets, CSVs and folders according to your setup. Ensure the pkl is extracted and ensure its path is correct in the code. If additional data is required for testing, ensure it is placed in the correct folder. 
-If attempting to rebuild and train the algorithm, convert the EEG data and features into a CSV after processing to save time and resources.
+Please refer to the comments in the code and rename the paths for the datasets, CSVs and folders according to your setup. 
+For training and building the algorithm, ensure a folder is created to hold the data. In the original it was called *Depression Data*. 
+For testing the algorithm, ensure a separate folder is created to hold that data. In the original code it was called *Depression Tester*.
+Ensure the pkl is extracted and ensure its path is correct in the code. 
+
 
 # Datasets
 Major Depressive Disorder (MDD) EEG data was obtained from Figshare, authored by Wajid Mumtaz
